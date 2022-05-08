@@ -29,10 +29,9 @@ submitButt.addEventListener("click", ()=> {
     createGrid(inputUser)
 })
 
-const colorButt = document.querySelector("#colorchoice")
-const boxes = document.querySelectorAll('.hover');
-
 let colorChoice = "black";
+
+const colorButt = document.querySelector("#colorchoice")
 colorButt.addEventListener("input", () =>{
     colorChoice = colorButt.value;
-    })
+})
