@@ -1,8 +1,8 @@
 const container = document.querySelector(".container")
+let colorChoice = "black";
 
 function createGrid (number){
     for (i=0; i<number; i++){
-
         let divColumn = document.createElement("div");
         divColumn.id = "column" + i;
         container.appendChild(divColumn).classList.add("column");
@@ -29,7 +29,6 @@ submitButt.addEventListener("click", ()=> {
     createGrid(inputUser)
 })
 
-let colorChoice = "black";
 
 const colorButt = document.querySelector("#colorchoice")
 colorButt.addEventListener("input", () =>{
